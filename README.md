@@ -4,7 +4,7 @@ IP-Tracer-Pro is a professional and lightweight Python-based tool designed for f
 ## Installation
 ```bash
 pkg install python
-git clone [https://github.com/dead-body-16/IP-Tracer-Pro](https://github.com/dead-body-16/IP-Tracer-Pro)
+git clone https://github.com/dead-body-16/IP-Tracer
 cd IP-Tracer
 pip install -r requirements.txt
 python trace.py

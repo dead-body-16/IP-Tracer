@@ -1,5 +1,5 @@
 # IP-Tracer-Pro
-A professional IP information gathering tool for Termux and Linux.
+IP-Tracer-Pro is a professional and lightweight Python-based tool designed for fetching geographical and network information of any public IP address. Optimized specifically for Termux and Linux environments, this tool is ideal for OSINT (Open Source Intelligence) and network analysis.
 
 ## Installation
 ```bash

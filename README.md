@@ -39,3 +39,9 @@ pip install requests
 
 # Run the tool
 python trace.py
+
+<p align="center">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Security-Strict-green%3Fstyle%3Dflat-square">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Maintenance-Active-yellow%3Fstyle%3Dflat-square">
+</p>
+​<h4 align="center">Created with ❤️ by NZ NISHAN</h4>

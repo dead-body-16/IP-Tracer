@@ -9,12 +9,13 @@ R = '\033[1;31m' # Red
 B = '\033[1;34m' # Blue
 Y = '\033[1;33m' # Yellow
 W = '\033[0m'    # White
+BOLD = '\033[1m' # Bold Text
 
 def clear_screen():
     os.system('clear' if os.name == 'posix' else 'cls')
 
 def banner():
-    print(f"{G}")
+    print(f"{G}{BOLD}") # Banner bold green
     print("="*45)
     print("      IP TRACER & PORT SCANNER - PRO")
     print("="*45)
@@ -56,14 +57,13 @@ def port_scanner():
     print(f"{B}[*] Scanning started on: {target}{W}")
     print(f"{Y}[!] Please wait, checking common ports...{W}")
     
-    # Common ports for reconnaissance
     common_ports = [21, 22, 23, 25, 53, 80, 110, 135, 139, 443, 445, 3306, 3389, 8080]
     
     try:
         found_ports = 0
         for port in common_ports:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            socket.setdefaulttimeout(1) # Timeout for faster scanning
+            socket.setdefaulttimeout(1)
             result = s.connect_ex((target, port))
             if result == 0:
                 print(f"{G}[+] Port {port} is OPEN{W}")
@@ -82,11 +82,12 @@ def main_menu():
     while True:
         clear_screen()
         banner()
-        print(f"{G}1. Trace any public IP")
-        print(f"2. Show your IP info")
-        print(f"3. Port Scanner (Beta)")
-        print(f"4. Follow Developer")
-        print(f"5. Exit{W}")
+        # অপশনগুলো লাল এবং বোল্ড করা হয়েছে
+        print(f"{R}{BOLD}1. Trace any public IP{W}")
+        print(f"{R}{BOLD}2. Show your IP info{W}")
+        print(f"{R}{BOLD}3. Port Scanner (Beta){W}")
+        print(f"{R}{BOLD}4. Follow Developer{W}")
+        print(f"{R}{BOLD}5. Exit{W}")
 
         choice = input(f"\n{Y}[?] Choose an option: {W}")
 
